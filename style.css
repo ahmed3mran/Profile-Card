@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+:root {
+  --Dark-cyan: #19a2ae;
+  --Very-dark: #2d3248;
+  --Dark-grayish: #6a6f81;
+  --Dark-gray: #969696;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  overflow: hidden;
+}
+body::before{
+  content: '';
+  position: absolute;
+  background-image: url('images/bg-pattern-bottom.svg');
+  top: -80px;
+  left: -450px;
+  max-width: 3150px;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(100deg);
+
+}
+body::after{
+  content: '';
+  position: absolute;
+  background-image: url('images/bg-pattern-top.svg');
+  bottom: -200px;
+  right: -600px;
+  max-width: 3150px;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(-50deg);
+  opacity: .7;
+}
+
+.container{
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 375px;
+  width: 100%;
+  z-index: 1;
+}
+.content-top{
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.1px solid var(--Dark-gray);
+  padding-bottom: 30px;
+}
+.content-top #bck-img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.content-top #img-card{
+  max-width: 100px;
+  position: relative;
+  top: -60px;
+  left: 0;
+  border-radius: 50%;
+  border: 7px solid #fff;
+}
+.content-top h3{
+  color: var(--Very-dark);
+  margin-top: -35px;
+  margin-bottom: 15px;
+  
+}
+.content-top h3 span{
+  color: var(--Dark-grayish);
+  font-weight: 400;
+}
+.content-top > span{
+  color: var(--Dark-gray);
+}
+
+.content-bottom{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.content-bottom h3 {
+  text-transform: uppercase;
+  color: var(--Very-dark);
+}
+.content-bottom h3 span{
+  display: block;
+  text-transform: capitalize;
+  color: var(--Dark-grayish);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
